@@ -1,0 +1,61 @@
+[
+    {
+      "id": "1",
+      "name": "Plain Printed t-shirt",
+      "preview": "https://5.imimg.com/data5/ANDROID/Default/2024/8/446768285/QT/DJ/BE/77048986/product-jpeg-1000x1000.jpg",
+      "photos": [
+        "https://d2fy0k1bcbbnwr.cloudfront.net/Designs_Inners_and_Outers/Tshirts/Men/Men_Plain_Sunset_Orange_2.jpg",
+        "https://d2fy0k1bcbbnwr.cloudfront.net/Designs_Inners_and_Outers/Tshirts/Men/Men_Plain_Sunset_Orange_3.jpg"
+          ],
+      "description": "Gown With Dupata",
+      "size": [1, 1, 0, 1, 0],
+      "isAccessory": false,
+      "brand": "TN",
+      "price": 359
+    },
+    {
+      "id": "2",
+      "name": "Men Black Sporty Tshirt",
+      "preview": "https://d2fy0k1bcbbnwr.cloudfront.net/Designs_Inners_and_Outers/Tshirts/Men/Men_Plain_Black_1.jpg",
+      "photos": [
+        "https://d2fy0k1bcbbnwr.cloudfront.net/Designs_Inners_and_Outers/Tshirts/Men/Men_Plain_Black_2.jpg",
+        "https://d2fy0k1bcbbnwr.cloudfront.net/Designs_Inners_and_Outers/Tshirts/Men/Men_Plain_Black_3.jpg"
+      ],
+      "description": "New stylish Rayon anarkali and grown kurti , kurta",
+      "size": [0, 0, 0, 1, 0],
+      "isAccessory": false,
+      "brand": "TN",
+      "price": 799
+    },
+    {
+      "id": "3",
+      "name": "Men White Tshirt for daily use",
+      "preview": "https://d2fy0k1bcbbnwr.cloudfront.net/Designs_Inners_and_Outers/Tshirts/Men/Men_Plain_White_3.jpg",
+      "photos": [
+        "https://d2fy0k1bcbbnwr.cloudfront.net/Designs_Inners_and_Outers/Tshirts/Men/Men_Plain_White_3.jpg",
+        "https://xcdn.next.co.uk/common/items/default/default/itemimages/3_4Ratio/product/lge/D33001s.jpg?im=Resize,width=750",
+        "https://xcdn.next.co.uk/common/items/default/default/itemimages/3_4Ratio/product/lge/D33001s.jpg?im=Resize,width=750"
+      ],
+      "description": "Flaunt an effortless look with this ultimate pair of black coloured formal shoes from the house of Hush Puppies. Let the sun go down for uncomfortable shoes, as you opt for this pair of formal shoes that is crafted using comfortable TPR (thermoplastic rubber) sole. Pair these formal shoes with a shirt and trousers to look absolutely handsome",
+      "size": [1, 1, 1, 1, 1],
+      "isAccessory": false,
+      "brand": "TN",
+      "price": 399
+    },
+    {
+      "id": "4",
+      "name": "Trendy Blue T-Shirt for use daily",
+      "preview": "https://chriscross.in/cdn/shop/files/ChrisCrossRoyalblueCottontshirtmen.jpg?v=1740994595",
+      "photos": [
+        "https://images.meesho.com/images/products/505236657/mmh92_512.webp",
+        "https://images.meesho.com/images/products/505236657/qzpux_512.webp",
+        "https://images.meesho.com/images/products/505236657/jzi5n_512.webp"
+           ],
+      "description": "Black solid leather jacket, has a spread collar, 3 pockets, zip closure, long sleeves, straight hem, polyester lining",
+      "size": [1, 1, 1, 1, 1],
+      "isAccessory": false,
+      "brand": "TN",
+      "price": 879
+    }
+    
+  ]

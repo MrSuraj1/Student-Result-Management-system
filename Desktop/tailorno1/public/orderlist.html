@@ -1,0 +1,61 @@
+<html>
+<body style="visibility: hidden;">
+<!-- <div class="col-sm-6" style="border: 1px solid gray;border-radius: 8px;">
+    <h2 style="text-align: center;">Users Table</h2>
+    <div class="row">
+        <div class="col-sm-2" style="background-color: #ffdc5c;padding: 10px;">Name</div>
+        <div class="col-sm-2" style="background-color: #38b7ff;padding: 10px;">Email</div>
+        <div class="col-sm-2" style="background-color: #38b7ff;padding: 10px;">phone</div>
+        <div class="col-sm-2" style="background-color: #ff914d;padding: 10px;">product</div>
+        <div class="col-sm-2" style="background-color: #3bfc00;padding: 10px;">produc</div>
+
+    </div>
+    <div id="showUsers"></div>
+</div>
+</div> -->
+
+<!-- <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-database.js"></script>
+<script>
+// Initialize Firebase
+const firebaseConfig = { apiKey: "AIzaSyCh7O9uKAbPPZTIsczBuZuGcuoQLv9-9yY",
+  authDomain: "tailorno1-66aa1.firebaseapp.com",
+  databaseURL: "https://tailorno1-66aa1-default-rtdb.firebaseio.com",
+  projectId: "tailorno1-66aa1",
+  storageBucket: "tailorno1-66aa1.appspot.com",
+  messagingSenderId: "61332335324",
+  appId: "1:61332335324:web:25c289cc1a5ceb94d86219",
+  measurementId: "G-G0Z2Z3R6P2"
+};
+firebase.initializeApp(firebaseConfig);
+
+    
+// Read data
+firebase
+    .database()
+    .ref("users/")
+    .on("value", function (snapshot) {
+
+        document.getElementById("showUsers").innerHTML = "";
+        snapshot.forEach(function (childSnapshot) {
+            var key = childSnapshot.key;
+            var childData = childSnapshot.val();
+            let addDiv = document.createElement('div');
+            addDiv.className = "row";
+            addDiv.innerHTML =
+                '  <div class="col-sm-2" style="padding: 10px;    word-break: break-word;"><br>' +
+                childData.name +
+                '</div><div class="col-sm-2" style="padding: 10px;    word-break: break-word;">' +
+                childData.phone +
+                '</div><div class="col-sm-2" style="padding: 10px;" word-break: break-word;">' + 
+                    childData.Url +
+                '</div> <div class="col-sm-2" style="padding: 10px; word-break: break-word;"> ';  + 
+                childData.email +
+                 '</div><div class="col-sm-2" style="padding: 10px;"word-break: break-word;"backgroundColor:red;'
+            document.getElementById("showUsers").appendChild(addDiv);
+        });
+
+    });
+</script>                 -->
+</body>
+</html>

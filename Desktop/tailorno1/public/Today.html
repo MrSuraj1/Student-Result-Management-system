@@ -1,0 +1,284 @@
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- ===( CODE AASHU )=== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login-da</title>
+  <!-- === Custom CSS === -->
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+      }
+      
+      section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTExIVFhUXFRUXFRUVGBcYFRUXFxUWFxUXFxcYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OFQ8QFSsdFR0tKystLS0rLS0tLSstKzcrNy0rKy0tLSsrLS0tLTctLSstLTcrLS0tLS0rLTctKzctK//AABEIAJ8BPgMBIgACEQEDEQH/xAAcAAACAwEBAQEAAAAAAAAAAAADBAIFBgEABwj/xAA4EAABAwMBBQUHBAEEAwAAAAABAAIRAwQhMQUSQVFhE3GBkbEUIjKhwdHwBkJS4fEVYnKSI0Oi/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAECAwT/xAAaEQEBAQEBAQEAAAAAAAAAAAAAEQESAiEx/9oADAMBAAIRAxEAPwDDvuwNOs65lBNw52PLX0RLiy3TGqiymeA8gsIbtXcSPmfvhMOuWgQAPHMc9VW9i88Cusoc1FWTb8NGInnCDUvweBJ66eSgygOp+QR6FjPBT4Fjeng0KbbyoeHyVpabJLzgKypbCE+9/SXBSW9d5G6eqYZTdq4aDH3Vydk0m8Z9EEtYMAJRUtt3EzB+iK2z585iT9CrMU3O0aumwcMkE/JKKrsWjgOGe5RLRmG41xOquhYSJgd2q8dnRqfAYVoz1WkYwPVBa10kkeHP7cFpDYt4z5odayB0aAFaMs+meaG1ruRPgtaGNYMDPklX13ukRjotVIzL6SW7DvWoq2YAJMTyyq4v1wIVorqODHAqYtxzEST39EQ1BMaeC6xzZyY7olKiuuMnAOMKPaumd06RoYVwQD8In/kVytTe7kAOCUUr3mPhkcJnHDVD9oI4cI45C0VpVIwYjr9OSHeObrueJaI9Eoz/ALR0+Z+64Kwxwjv9EetunQAdy9RIGoBHXKtC76gcZGOSGSrN1NjuQPcl69rH9FKEXHoobqep2oOj47x/a9WsKjNQCOYIP9oF7d0EGE1UpzJEQRB6fkoLaD4kAHxz5ITqvMQglckYaOHJDFUwBy/Pqughcc1UeNbpjlJ++FwVug1ka4USoqA4uTP9n74U23HT5n7pUKQKiPodS3p8SZ9E1ZCoB/4mk+CYNg2dD4qwoVHNENAHcvPXRVVrW4Iy0jyQ6GyW/u1V92ZcfeJTVtaAZAVoSttgtiYHefsnW7KYG8irOmO5Qubclsgo1FVSNGl1Kj7WKphoHilbjZziSZ+yLs6qKc4B8JRHRaHe/wDJpwjTxU306bdAEetV7WGtackaY8e5WIsqbTusa2RqTkfNBVC4/axh7miT8l1tI/vgdCZPkE9XDoMHy+H+0OjYmA5xnv4KgDabQeJ8gout3HQY6lWJa1o5/nIZSt3eU2D3nDw/IVRXXFFwySPAJPs3uPEeiLX29TBhrRHM5SFf9QwcNMdD/S1mJTlS0cfiJS77KP3Qlj+oA6BuxzQq965+jZ6rUZo9a3kfEI5jVV9ezZ/NHt3OODgpiraOjVWJVObFvP1QKtqBoSe4fdOXb6gBAdA6AKprbTrNEBw790SqlE34OWlHbdt0MjwVJW2rW4kHvaPognatX/b5JFWtQHVp81Grf1AIxH5zVZT2o4HIaUV+2Z/YPVICPumnVgPVL1C05GEJ9008CPRcptadDCQefWcNIXWXPOVN1v1lBcwjghR+3aUX2vEaqvMckMlIGxWzhMU6xnOVWscnaNwJEN8Siru1s2VoDqbMxJA3XeYUdsbGoswzeYeclwPeD9F6jfhgkiSl73aPaKIqbm33dDKWTlRvIpZzIRQ11SXAg+8myC6y1jgrJ1NRDF53WEAzwXg/knalGWpY0IJPBETtrgJmpWHLwVQGkLoqu9UpT5YDwStexaTLIB5IPtbgZyisvRGde7VKJsqdnHuw4SN7gfEaI1K6Y7WARx4+fFBdcjgccjw7kLeBMx5FVFlVrgNnwEZQaNVvCBzmcJQSBDTIP7XKTXD+MHvVC+0X1dGeYWeuLKqTLpPflaum+Pi3o7vqutcJ6eEx4wtZqMX/AKa48IQq2z4xBnoty57QYie8IQDDEgdcLWaxHz1lKHwR9Frdk7LL2zBA68U3VtKTnTu+WVf2G6QN3hAVpmfVBX2G1ucpCqzdEH5ra3DJCoNrMaJ9eSZpuMpdUw7AGVSXOziJyD6K6uq0EweeO/xSd1dyIBJwQeg5qssvcWuqV3AE1d1zvFKPeqoFRqEQjmF5rJVAGUiTATLaLQMny0R6DPejScL1S1yRxJxyggAotAqS0xOOCIKhzPDVevKWgmY/OCm1wx5nviERDBQqlFOtqDmeGQOXiuipMa4nEeRRKrd1TpmE81hk+GY5eKm22MYOZ0jrgDki0i6qSoyrGtaDSdPU5KXdTChSxK9vFHcAhQioOaj0rMcTnkOCHTw4HqnyyCDHA6DuhZH6NdZqPsfRXZpLnZLny9CkFmF51mDqFddkomn3KQUTtnN/igv2a3ktDuNXN1vNSJGXqbLb18kI7Mb18lqnU280N1u3moRlzsxnXyXBstnMrTG0HNQ9lHNVIoW7NaNCvHZY5q/NuOZ+S57OOv8A8qsqIbNjAKidnHmtB2A/3fJc7Ecj5hCKEWsRoefVGq29NzTiDy5+IVs+2Z/E+aA+2Z/H5q0jO9hB+AK02a0RMR0R6lqz+PzUrWiBMCFd34zmfQbisBOFl9uV8FafaDcLIbQpy6DK15PTKX1SDKqLp5PvfJX+1bLM8eA4qpvrPdHLotuajrkFAIlFrNgoMKq5ToEmAJ7lbWexq0F24YGpKf8A0WG9u3e44B5E6YX1AbPbxCjO6+SU9mkmA3PcmBsqpGAV9VpbOpgyGo3ZhvARyhW4n18ebsszkfdODYIx+Qt3f2O8ZawD5KNvsmof2+ivxnd1izskDhnzCELABfRH7KdHvM9EGts4ER2be+M+amrdfPn2LuAQ3Wjhr7vetyyxDZx3ccpK7ouP/rHkpVrB1GlBNIrYv2RVdkU/ARKUuNj1W/Ewie76KVcZtrByUuwCuXbOdyKk3Y9U6Uj4iPVTfTWKUUGotMRoSrduwa5/ZA5kj7oFfZb2mCR54WesV+kt5DdUXN/khvceRTXaumqhPqqJd0UXtMT6rGrXDVUO1QiCUBxWUpw11Ht1XOqKBqoVa+0LhuFVdqVFzyqm6tfal0XQVG646qBueqrNaB14FD2sLPOu+qGbtDppDdhCNyFn/beq57Z1Uib6aDtwUxQbKzlK76q82ZX3hEePBDPX1DaIaAsntJgyVtbuI4ErKbbokAldPK+mOurgNkkZ4dFRXVwTqrralsAMOkngNFR3VF2hgLo5qu6S7Qi1RBgrtGkSdFUar9DFjKoc4sI0h0z4L6oKrSMALCfo+z3W77munhOngFoK20IWNZ6i5fWaBKVZftzoqV+1eCC7axbwhSL0tK14JU6Fz1VFU2mHGTGFB20wdFvGNrTi8HNCrXQ5rONvZMyE3X2s0gTGFNXKsqdwyDME8FWV77JygjbbG5ET1AKUvb0VCTDRPgopn/UCMbx7pUW3h4uVLVfu6nKXdtABNwzdaVu0wBmEtW2rKz7r4cgoe0ngFnjGutXbtoPgiSq67dvxM4Q21HcV4MLtJPgs8xa+8VLiPnAlAdcngVTuuzwXqdVxWbrvcXIuSg1Kw5pIOHEoZMmAh0fbcwICHWrkjJQTSIGqCZHLxUKm5oifmgVXjgP7U31GxEpXeE64RnR4JGNeikLJ8zIHEydJ5wgMvms0/wAqNTagjCp8EfbtEy6TnTACr62DrPVL3V/OhVdVujzKiHHV/pmfogura668OXPVIOeVJoKqDOuO/hx+Wq82rJgfnNEtLF1QxHjBKvbXYO7k5Vqcq6xoudoDC1OzLfdxzGeaJa2rW5R2kTySrnmK7aVct0Wc21ftc3JzyC1e0w0tJIWE/UdEtaS7GCR9AOa35XWZubmScqoruJgzJmBzwfsu3FWMhKm6zO6J5ro5u1GS8eHqtzsP9NClDy4OMbwEYzpM9FndggAmpvNLhmD66LQj9QSN1og8STjzRnV8+oP6xhVd84DPTnx80g3aoJ3Q7PEoO0qoj4sozy665GfvpjvQ3XWk+OVSVa/VCN31QXFa6g8JGvehG57lTOuuqj7StQXwvyBoPJeaS/MKjbdI42geahGjsrNm972fFO1GUwCIHPPise7abuaK2/e6PdnqpqrvaFOluideh6Kqrhp0gTA7uf0Sl3UqauGPRAp1pUFrRtmAZyeUx85XnPaBgAZ56DCTaCRqO5Cc0qKfDgT4HH4V6rdhuPQ59UrbtPJer7PLslZ3Vx9hp1+USmR1d4BUVF5Jwje0Fp1ysR06XIpt4z56IT3bvwqtp3LnECdVZGq0CI8Si2g1LwpWpXJS95cDeMJJ12kSnnVZS76qVdcT3obrmdVFGqV0u+uguq9Uu+uOaAtSqg9t4DvUKlRscZQQ8c0DHanmntne8RpHPHyVdSeNJ/PFNuqbrARiMExw4adZ81NVsLSsGDCP/qA6lYSntlwwSrO228CADuhWFaqnfEnUKF9dkDXwnKoztemBz7tFnNr7ccTvNkgclrMK0F3cVKkAHJOh5Kh/UfaOcd94wIAGRA5pJ/6rhmJ3iNeXRZ2/2rUqEknK6ZjOgXNXJCSc5ee+TldkcG+q0ysdmPAMmU/Z12tdLePPgqm2ovdo0kDXQeqk63c05n1RIu7q7YCXamNcKjuLwk6obsqL2hCIOrFC7ZecFw0lUdL14PQ91EpU51MJUiQcnLWzc7MwPzgpUKDQJmSmhXhZ30sR/wBNg/EgNuC0lqaqXiUNVsz59VKRYU6+8MpYtjT5ILroIFW7QiyaJGuUJ4Ea5VaLtEoPLipCD9rHFOM2iAEGjb0496Z5z6BSqWTD8JPis7Fj65XqNIxA7klVqhUov8BdddykTpeWzzq0eKUvb08TGeqTbdbrfi74StSpJIJJ8Ei0YXcnr496G66Eaa/IhVj3YOdNELf64MxPRWLVjUrIPblLGpndJJ5jRANbHD7x4qRo5WqRkQeYSj7gc/NRNU6SOUQEKoyDg9PukB6NckRw4Z07lAPjIj6JVlSJIxz5KPaTx8tfn9kgshcf3+cEP2ojIMd+hHdoQkxUA493P/Km+4nQCP8AaI8+J81Iop3anwndd/An3T/xcfQoNWk9vxNcO8KdGtIJwToJn6qVPaBAaD8BzBE8MwTJGeSv0L074t44OoK5X2gDp/XzXa7aBqEOa9o5tMiSORE6rtazptE0peYyd44nhAIMxwVpCVN0ZXGXLATvNJ5RhBNSDJDZk497PDnMrlWCSAN2NcZk6BaQO6qNmQIUKDj+1pPcCfRHYXNHxkawGnWOv+VKvcOcN01akxIaNIjjnVAR9V0QXgdCCPlqlH1M6nuOFzs4w0zzH5qvOpYB9I9ER3xUC2OU9V0UeR8IjEc17cIzmFRDfP4FzccdGk9wKatqcnMGOH5wVxsatE6Ag5geI7glSM4+3cBJaQhyt7ctYRpg6zx81Q7S2cyZEcgNBGs4Uz1SKJtcjivdqUyLMAmXYxp1/wAKbrRhAh2TPy1VIR7UqDqqZdaDg4RjPegOoD+XGNEIgKi7vSuuoRqefywhlmJ4c0WOgiUdtWDjCWYwk4Rm0STGiBr2hFpXB4SUC3tRI3jx0Vkd0GAABGI8NVki5bcJilcaqnbWKI2uRmcTB0Vcl4yq53uwei8+i8TlsniXN9Bn5Kn7UxInHEIDyTrKy2sCA2T2jTjQb3qWgJM1YxOD+cQhsbMwfT8/ylKh66K4pupcniTIQvaD/I5S3aj7qFR2eQRTZuCD9V0XJM65x0+SS3/zOVxpI0OqKY7fgT5KTnA/n5CWHU44qTo4KAnad/ivT09UOjvEw2SeQEpu2tcntg5oj3dRlN1cwKjcFszoeme9dFy0cSeWNFB9JodBdI58UxWq0WsAaA49ePeVKsVzq0mSVFtd0y10Hn91K8qtOWiOY4JTeWkMGrvYMBx/6OPI/wAT8lGk9xOZ93BEwR0z6nRAqOxkz0Xi4OG8RLhA590+UIGrnQboIGhJdvSehOnchtquafenXuUHVOH1/PwIT3xiB+dJwmA7ao5Dnn8hH3+hOM5+U9yVtjmYk4jp4ce9TrUsAkxPODPPLfRVB3VZ1nx+n3QXv1j0ie+ELdIzPkZ8MFQJnVIGreqZxP8AStbVoB3i4ieEcVRsqbqILhxQaJ9zvfRVd5UcSdcadPFct6iaNwI4KCmdVcDrlRFV3Mqwr1WcggNLT0CojRBPUofZOJgjHVH9pa3AQKl4iBVW+9nRO0XNgYwNAq51whmuUFq64HRBfcqtNVc7RFOGvmUZ14DBndPdKqy9elQaZ11PJCfVSfaLxqLTisDdujBMHUBLuqTr6ygCphQc5RrDTKxGihUdCWLyp72EbN0bYvEgjxMFEZY1DgCeuISDKhCtdn3ukjRZ2riNXZNZo+CR0ygV6DmAFzYngTny4FXr74xIKrK9ftnAHhxWetaivo1nkwNeGijU3p97B7vorQ2jGOaRONUWtctJndB7wnRCGzbgsdKcu9pCo0gnKYZWB1A8lT7RpCZbjnH0U/dX8wpUqZ49xQS9CdUXHO/P7XRkQv71EPQd9cLkBjU/wuWz/iHQO/6mUFxXrd0O6ZnyVB3VZ0/PzmolpQgiU6hGv+PNB0HmiNeeaBK9vdVUGJ/NF7tzzlCXCgap1RxRTXHAJGV3eQNG5hRdeFLOKhKArq8qJrHmhlRKCTqi41yEXKIcqGN4KJcgErkqApK5KHvLm8iiEr0ocr0qD//Z);
+        background-size: cover;
+        background-position: center;
+        animation: animateBg 5s linear infinite;
+      }
+      
+      @keyframes animateBg{
+        100%{
+          filter: hue-rotate(360deg);
+        }
+      }
+      
+      .login-box{
+        position: relative;
+        width: 400px;
+        height: 450px;
+        background: transparent;
+        border: 2px solid rgba(255, 255, 255, .5);
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(15px);
+      }
+      
+      h2{
+        font-size: 2em;
+        color: #fff;
+        text-align: center;
+      }
+      
+      .input-box{
+        position: relative;
+        width: 310px;
+        margin: 30px 0;
+        border-bottom: 2px solid #fff;
+      }
+      
+      .input-box label{
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        transform: translateY(-50%);
+        font-size: 1em;
+        color: #fff;
+        pointer-events: none;
+        transition: .5s;
+      }
+      
+      .input-box input:focus~label,
+      .input-box input:valid~label{
+        top: -5px;
+      }
+      
+      .input-box input{
+        width: 100%;
+        height: 50px;
+        background: transparent;
+        border: none;
+        outline: none;
+        font-size: 1em;
+        color: #fff;
+        padding: 0 35px 0 5px;
+      }
+      
+      .input-box .icon{
+        position: absolute;
+        right: 8px;
+        color: #fff;
+        font-size: 1.2em;
+        line-height: 57px;
+      }
+      
+      .remember-forget{
+        margin: -15px 0 15px;
+        font-size: .9em;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+      }
+      
+      .remember-forget label input{
+        margin: right 3px;
+      }
+      
+      .remember-forget a{
+        color: #fff;
+        text-decoration: none;
+      }
+      
+      .remember-forget a:hover{
+        text-decoration: underline;
+      }
+      
+      button{
+        width: 100%;
+        height: 40px;
+        background: #fff;
+        border: none;
+        outline: none;
+        border-radius: 40px;
+        cursor: pointer;
+        font-size: 1em;
+        color: #000;
+        font-weight: 500;
+      }
+      
+      .register-link{
+        font-size: .9em;
+        color: #fff;
+        text-align: center;
+        margin: 25px 0 10px;
+      }
+      
+      .register-link p a{
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      
+      .register-link p a:hover{
+        text-decoration: underline;
+      }
+      
+      @media (max-width:360px){
+        .login-box{
+          width: 100%;
+          height: 100vh;
+          border: none;
+          border-radius: 0;
+        }
+        .input-box{
+          width: 290px;
+        }
+      }
+</style>
+<body>
+  <section id="hid" style="visibility: visible;" >
+    <div class="login-box">
+      <form action="">
+        <h2>Login</h2>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="mail"></ion-icon> </span>
+          <input type="email" id="check">
+          <label > Email</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="lock-closed"></ion-icon> </span>
+          <input type="password"  id="check1" required>
+          <label > Password</label>
+        </div>
+        <div class="remember-forget">
+          <label>
+            <input type="checkbox">Remember Me
+          </label>
+          <a href="#">Forget Password</a>
+        </div>
+        <button type="button" id="here" onclick="hero()">Login</button>
+          </p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+</body>
+<div id="order" style="visibility: hidden;">
+    <div class="col-sm-6" style="border: 1px solid gray;border-radius: 8px;">
+        <h2 style="text-align: center;">Users Table</h2>
+        <div class="row">
+            <div class="col-sm-2" style="background-color: #ffdc5c;padding: 10px;">Name</div>
+            <div class="col-sm-2" style="background-color: #38b7ff;padding: 10px;">Email</div>
+            <div class="col-sm-2" style="background-color: #38b7ff;padding: 10px;">phone</div>
+            <div class="col-sm-2" style="background-color: #ff914d;padding: 10px;">product</div>
+            <div class="col-sm-2" style="background-color: #3bfc00;padding: 10px;">produc</div>
+    
+        </div>
+        <div id="showUsers"></div>
+    </div>
+    </div>
+    
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-database.js"></script>
+    <script>
+    // Initialize Firebase
+    const firebaseConfig = { apiKey: "AIzaSyCh7O9uKAbPPZTIsczBuZuGcuoQLv9-9yY",
+      authDomain: "tailorno1-66aa1.firebaseapp.com",
+      databaseURL: "https://tailorno1-66aa1-default-rtdb.firebaseio.com",
+      projectId: "tailorno1-66aa1",
+      storageBucket: "tailorno1-66aa1.appspot.com",
+      messagingSenderId: "61332335324",
+      appId: "1:61332335324:web:25c289cc1a5ceb94d86219",
+      measurementId: "G-G0Z2Z3R6P2"
+    };
+    firebase.initializeApp(firebaseConfig);
+    
+        
+    // Read data
+    firebase
+        .database()
+        .ref("users/")
+        .on("value", function (snapshot) {
+    
+            document.getElementById("showUsers").innerHTML = "";
+            snapshot.forEach(function (childSnapshot) {
+                var key = childSnapshot.key;
+                var childData = childSnapshot.val();
+                let addDiv = document.createElement('div');
+                addDiv.className = "row";
+                addDiv.innerHTML =
+                    '  <div class="col-sm-2" style="padding: 10px;    word-break: break-word;"><br>' +
+                    childData.name +
+                    '</div><div class="col-sm-2" style="padding: 10px;    word-break: break-word;">' +
+                    childData.phone +
+                    '</div><div class="col-sm-2" style="padding: 10px;" word-break: break-word;">' + 
+                        childData.Url +
+                    '</div> <div class="col-sm-2" style="padding: 10px; word-break: break-word;"> ';  + 
+                    childData.email +
+                     '</div><div class="col-sm-2" style="padding: 10px;"word-break: break-word;"backgroundColor:red;/> <hr><hr> '
+                document.getElementById("showUsers").appendChild(addDiv);
+            });
+    
+        });
+    </script>                
+</div>    
+<script>
+class a{
+     ema="suraj@gmail.com"
+     psw="9899";
+
+  }
+   
+   function hero(){
+   // window.alert("j/")
+    let a=document.getElementById("check").value;
+ let b=document.getElementById("check1").value;
+ let em="suraj@gmail.com"; let ps="9899";
+ ob = a;
+ console.log(a.ema)
+ //  alert(a)
+// alert(b)
+
+// alert(em)
+// alert(ps)
+
+if( a==em &&   b===ps ){
+    
+        alert("Good morning sir");
+       // window.open("orderlist.html");
+      document.getElementById("order").style.visibility="visible";
+      document.getElementById("order").style.marginTop="-700px"; 
+        document.getElementById("hid").style.visibility="hidden";    
+}
+else{
+    alert("you track")
+}
+
+}
+</script>
+
+</html>

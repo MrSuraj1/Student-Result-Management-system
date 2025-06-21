@@ -1,0 +1,81 @@
+[
+    {
+      "id": "1",
+      "name": "Men Navy Solid Sweatshirt",
+      "preview": "https://images.meesho.com/images/products/478284463/gslpl_512.webp",
+      "photos": [
+        "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7579188/2018/11/5/08a7b230-ee8f-46c0-a945-4e835a3c01c01541402833619-United-Colors-of-Benetton-Men-Sweatshirts-1271541402833444-1.jpg",
+        "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7579188/2018/11/5/efc3d5b9-1bb3-4427-af53-7acae7af98951541402833591-United-Colors-of-Benetton-Men-Sweatshirts-1271541402833444-2.jpg",
+        "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7579188/2018/11/5/c7e58861-3431-4189-9903-9880f5eebd181541402833566-United-Colors-of-Benetton-Men-Sweatshirts-1271541402833444-3.jpg",
+        "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7579188/2018/11/5/66490b64-32de-44b4-a6e4-fe36f1c040051541402833548-United-Colors-of-Benetton-Men-Sweatshirts-1271541402833444-4.jpg",
+        "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7579188/2018/11/5/957be784-7c5d-4e90-ab9f-0928015b22891541402833645-United-Colors-of-Benetton-Men-Sweatshirts-1271541402833444-5.jpg"
+      ],
+      "description": "Gown With Dupata",
+      "size": [1, 1, 0, 1, 0],
+      "isAccessory": false,
+      "brand": "TN",
+      "price": 259
+    },
+    {
+      "id": "2",
+      "name": "Men Black MAMGP T7 Sweat Sporty Jacket",
+      "preview": "https://images.meesho.com/images/products/455838556/nbufa_512.webp",
+      "photos": [
+        "https://images.meesho.com/images/products/455838556/2wknt_512.webp",
+        "hhttps://images.meesho.com/images/products/455838556/vul4p_512.webp",
+        "https://images.meesho.com/images/products/455838556/nbufa_512.webp"
+      ],
+      "description": "New stylish Rayon anarkali and grown kurti , kurta",
+      "size": [0, 0, 0, 1, 0],
+      "isAccessory": false,
+      "brand": "TN",
+      "price": 799
+    },
+    {
+      "id": "3",
+      "name": "Men Black Action Parkview Lifestyle Shoes",
+      "preview": "https://images.meesho.com/images/products/455838557/mvytb_512.webp",
+      "photos": [
+        "https://images.meesho.com/images/products/455838557/1e0n9_512.webp",
+        "https://images.meesho.com/images/products/455838557/mvytb_512.webp",
+        "https://images.meesho.com/images/products/455838557/4rkk1_512.webp",
+        "https://images.meesho.com/images/products/455838557/mvytb_512.webp"
+      ],
+      "description": "Flaunt an effortless look with this ultimate pair of black coloured formal shoes from the house of Hush Puppies. Let the sun go down for uncomfortable shoes, as you opt for this pair of formal shoes that is crafted using comfortable TPR (thermoplastic rubber) sole. Pair these formal shoes with a shirt and trousers to look absolutely handsome",
+      "size": [1, 1, 1, 1, 1],
+      "isAccessory": false,
+      "brand": "TN",
+      "price": 799
+    },
+    {
+      "id": "4",
+      "name": "Trendy beautiful women printed rayon kurti fashionable party wear dress Purple",
+      "preview": "https://images.meesho.com/images/products/505236657/g4pwp_512.webp",
+      "photos": [
+        "https://images.meesho.com/images/products/505236657/mmh92_512.webp",
+        "https://images.meesho.com/images/products/505236657/qzpux_512.webp",
+        "https://images.meesho.com/images/products/505236657/jzi5n_512.webp"
+           ],
+      "description": "Black solid leather jacket, has a spread collar, 3 pockets, zip closure, long sleeves, straight hem, polyester lining",
+      "size": [1, 1, 1, 1, 1],
+      "isAccessory": false,
+      "brand": "TN",
+      "price": 879
+    },
+    {
+      "id": "5",
+      "name": "Women Blue Solid Shirt Dress",
+      "preview": "https://images.meesho.com/images/products/502955685/7vm0o_512.webp",
+      "photos": [
+        "https://images.meesho.com/images/products/502955685/sn3nf_512.webp",
+        "https://images.meesho.com/images/products/502955685/3dvpn_512.webp",
+        "https://images.meesho.com/images/products/502955685/3dvpn_512.webp"
+        
+    ],
+      "description": "Blue solid woven shirt dress, has a shirt collar, sleeveless, button closure, flared hem",
+      "size": [1, 1, 1, 1, 1],
+      "isAccessory": false,
+      "brand": "TN",
+      "price": 700
+    }
+  ]
