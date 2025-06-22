@@ -23,7 +23,7 @@
 
       <div class="p-6 flex flex-col items-center border-b border-gray-200 dark:border-gray-700">
         <img src="./asset/img/my-avatar.png" class="w-28 h-28 rounded-full border-4 border-white shadow-lg object-cover" />
-        <h1 class="text-xl font-bold mt-4 gradient-text">Suraj Kumar</h1>
+        <h1 id="typewriter" class="text-xl font-bold mt-4 gradient-text"></h1>
         <p class="text-gray-600 dark:text-gray-400 text-sm">Full Stack Developer</p>
       </div>
 
@@ -54,7 +54,7 @@
       <section id="home" class="section min-h-screen flex items-center px-6 md:px-16 py-12">
         <div class="max-w-3xl mx-auto">
           <p class="text-purple-600 font-medium mb-3">HELLO THERE 👋</p>
-          <h1 class="text-4xl md:text-6xl font-bold text-gray-800 mb-4">I'm <span class="gradient-text">Suraj Kumar</span></h1>
+          <h1 class="text-4xl md:text-6xl font-bold text-gray-800 mb-4" >I'm <span class="gradient-text" id="typewriter1" ></span></h1>
           <h2 class="text-2xl md:text-3xl font-semibold text-gray-600 mb-6">Full Stack Developer</h2>
           <p class="text-gray-500 mb-8 leading-relaxed">I specialize in building beautiful, functional websites and applications with modern technologies.</p>
           <div class="flex flex-wrap gap-4">
@@ -247,11 +247,11 @@
                                 <h3 class="text-xl font-semibold text-gray-800 mb-2">E-commerce Platform</h3>
                                 <p class="text-gray-500 mb-4">A full-featured online store with payment processing and inventory management.</p>
                                 <div class="flex flex-wrap gap-2 mb-4">
-                                    <span class="bg-blue-50 text-blue-600 text-xs px-3 py-1 rounded-full">React</span>
-                                    <span class="bg-purple-50 text-purple-600 text-xs px-3 py-1 rounded-full">Node.js</span>
-                                    <span class="bg-green-50 text-green-600 text-xs px-3 py-1 rounded-full">MongoDB</span>
+                                    <span class="bg-blue-50 text-blue-600 text-xs px-3 py-1 rounded-full">Html5</span>
+                                    <span class="bg-purple-50 text-purple-600 text-xs px-3 py-1 rounded-full">Css3</span>
+                                    <span class="bg-green-50 text-green-600 text-xs px-3 py-1 rounded-full">javascript</span>
                                 </div>
-                                <a href="#" class="text-purple-600 hover:text-purple-800 font-medium">
+                                <a href="https://tailorno1ec.firebaseapp.com" class="text-purple-600 hover:text-purple-800 font-medium">
                                     View Project <i class="fas fa-arrow-right ml-2"></i>
                                 </a>
                             </div>
@@ -263,14 +263,14 @@
                                 <i class="fas fa-mobile-alt text-white text-5xl"></i>
                             </div>
                             <div class="p-6">
-                                <h3 class="text-xl font-semibold text-gray-800 mb-2">Task Manager App</h3>
-                                <p class="text-gray-500 mb-4">A mobile-first task management application with real-time updates.</p>
+                                <h3 class="text-xl font-semibold text-gray-800 mb-2">Student Result Management System</h3>
+                                <p class="text-gray-500 mb-4">A Student Result Management System with real-time updates.</p>
                                 <div class="flex flex-wrap gap-2 mb-4">
-                                    <span class="bg-blue-50 text-blue-600 text-xs px-3 py-1 rounded-full">React Native</span>
-                                    <span class="bg-pink-50 text-pink-600 text-xs px-3 py-1 rounded-full">Firebase</span>
-                                    <span class="bg-yellow-50 text-yellow-600 text-xs px-3 py-1 rounded-full">JavaScript</span>
+                                    <span class="bg-blue-50 text-blue-600 text-xs px-3 py-1 rounded-full">PHP</span>
+                                    <span class="bg-pink-50 text-pink-600 text-xs px-3 py-1 rounded-full">mySql</span>
+                                    <span class="bg-yellow-50 text-yellow-600 text-xs px-3 py-1 rounded-full">javascript</span>
                                 </div>
-                                  <a href="#" class="text-purple-600 hover:text-purple-800 font-medium">
+                                  <a href="www.google.com" class="text-purple-600 hover:text-purple-800 font-medium">
                                     View Project <i class="fas fa-arrow-right ml-2"></i>
                                 </a>
                             </div>
@@ -324,6 +324,23 @@
   <script src="asset/js/javascript.js">
 
   </script>
+<script>
+  const text = "Suraj Kumar";
+  const speed = 150;
+  let i = 0;
+
+  function typeWriter() {
+    if (i < text.length) {
+      document.getElementById("typewriter").innerHTML += text.charAt(i);
+       document.getElementById("typewriter1").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }
+
+  window.onload = typeWriter;
+</script>
+
 </body>
 
 </html>
